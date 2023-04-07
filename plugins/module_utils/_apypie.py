@@ -259,6 +259,9 @@ except ImportError:
 NO_CONTENT = 204
 
 
+NO_CONTENT = 204
+
+
 def _qs_param(param):
     # type: (Any) -> Any
     if isinstance(param, bool):
