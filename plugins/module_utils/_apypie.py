@@ -243,23 +243,9 @@ from json.decoder import JSONDecodeError  # type: ignore
 
 import os
 from urllib.parse import urljoin  # type: ignore
-try:
-    import requests
-except ImportError:
-    pass
-
-try:
-    from requests_gssapi import HTTPKerberosAuth  # type: ignore
-except ImportError:
-    try:
-        from requests_kerberos import HTTPKerberosAuth  # type: ignore
-    except ImportError:
-        HTTPKerberosAuth = None
 
 NO_CONTENT = 204
-
-
-NO_CONTENT = 204
+HTTPKerberosAuth = None
 
 
 def _qs_param(param):
