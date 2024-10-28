@@ -9,6 +9,11 @@ This changelog describes changes after version 0.8.1.
 v4.3.0-dev
 ==========
 
+Minor Changes
+-------------
+
+- host, hostgroup, domain, operatingsystem, subnet, organization, location - support setting hidden parameters
+
 Breaking Changes / Porting Guide
 --------------------------------
 
