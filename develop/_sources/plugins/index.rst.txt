@@ -129,7 +129,7 @@ Ansible Modules to manage Foreman and Katello installations
 
 **Supported ansible-core versions:**
 
-* 2.9.17 or newer
+* 2.10.4 or newer
 
 .. ansible-links::
 
