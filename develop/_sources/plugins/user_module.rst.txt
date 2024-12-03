@@ -226,7 +226,7 @@ Parameters
 
         <div class="ansible-option-cell">
 
-      The organizxation that the user uses by default
+      The organization that the user uses by default
 
 
       .. raw:: html
