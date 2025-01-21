@@ -6,7 +6,7 @@
     :trim:
 
 .. meta::
-  :antsibull-docs: 2.16.1
+  :antsibull-docs: 2.16.3
 
 .. Anchors
 
@@ -53,7 +53,7 @@ Synopsis
 - The Reports API is faster with many hosts.
 - The Reports API requires the :literal:`foreman\_ansible` plugin to be installed on the Foreman server.
 - Some options only work when using the Reports API.
-- Uses a YAML configuration file that ends with \`\`foreman.(yml|yaml)\`\`.
+- Uses a YAML configuration file that ends with \`\`foreman.(yml\|yaml)\`\`.
 
 
 .. Aliases
