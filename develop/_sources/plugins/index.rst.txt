@@ -7,7 +7,7 @@
 Theforeman.Foreman
 ==================
 
-Collection version 5.2.0-dev
+Collection version 5.3.0-dev
 
 .. contents::
    :local:
@@ -98,6 +98,7 @@ Ansible Modules to manage Foreman and Katello installations
 * Richard J Osborne <20555769+rjo-uk@users.noreply.github.com>
 * Richard Stempfl <richielatk@gmail.com>
 * Richard Waax <40852459+riwael@users.noreply.github.com>
+* Ruediger Pluem <ruediger.pluem@vodafone.com>
 * Sam <samcalvert@me.com>
 * Samir Jha <sjha4@ncsu.edu>
 * Sean O'Keeffe <seanokeeffe797@gmail.com>
