@@ -9,6 +9,11 @@ This changelog describes changes after version 0.8.1.
 v5.3.0-dev
 ==========
 
+Minor Changes
+-------------
+
+- Support Kerberos/GSSAPI authentication by passing ``use_gssapi: true`` instead of ``username`` and ``password``.
+
 v5.2.0
 ======
 
