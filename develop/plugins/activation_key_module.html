@@ -247,6 +247,14 @@ see <a class="reference internal" href="#ansible-collections-theforeman-foreman-
 </div></td>
 </tr>
 <tr class="row-odd"><td><div class="ansible-option-cell">
+<div class="ansibleOptionAnchor" id="parameter-ca_path"></div><p class="ansible-option-title" id="ansible-collections-theforeman-foreman-activation-key-module-parameter-ca-path"><strong>ca_path</strong></p>
+<a class="ansibleOptionLink" href="#parameter-ca_path" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">path</span></p>
+</div></td>
+<td><div class="ansible-option-cell"><p>PEM formatted file that contains a CA certificate to be used for validation.</p>
+<p>If the value is not specified in the task, the value of environment variable <code class="docutils literal notranslate"><span class="pre">FOREMAN_CA_PATH</span></code> will be used instead.</p>
+</div></td>
+</tr>
+<tr class="row-even"><td><div class="ansible-option-cell">
 <div class="ansibleOptionAnchor" id="parameter-content_overrides"></div><p class="ansible-option-title" id="ansible-collections-theforeman-foreman-activation-key-module-parameter-content-overrides"><strong>content_overrides</strong></p>
 <a class="ansibleOptionLink" href="#parameter-content_overrides" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">list</span> / <span class="ansible-option-elements">elements=dictionary</span></p>
 </div></td>
@@ -255,14 +263,14 @@ see <a class="reference internal" href="#ansible-collections-theforeman-foreman-
 <p>Override state (‘enabled’, ‘disabled’, or ‘default’) sets initial state of repository for newly registered hosts</p>
 </div></td>
 </tr>
-<tr class="row-even"><td><div class="ansible-option-indent"></div><div class="ansible-option-cell">
+<tr class="row-odd"><td><div class="ansible-option-indent"></div><div class="ansible-option-cell">
 <div class="ansibleOptionAnchor" id="parameter-content_overrides/label"></div><p class="ansible-option-title" id="ansible-collections-theforeman-foreman-activation-key-module-parameter-content-overrides-label"><strong>label</strong></p>
 <a class="ansibleOptionLink" href="#parameter-content_overrides/label" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">string</span> / <span class="ansible-option-required">required</span></p>
 </div></td>
 <td><div class="ansible-option-indent-desc"></div><div class="ansible-option-cell"><p>Repository <code class="docutils literal notranslate"><span class="pre">content_label</span></code> to override when registering hosts with the activation key</p>
 </div></td>
 </tr>
-<tr class="row-odd"><td><div class="ansible-option-indent"></div><div class="ansible-option-cell">
+<tr class="row-even"><td><div class="ansible-option-indent"></div><div class="ansible-option-cell">
 <div class="ansibleOptionAnchor" id="parameter-content_overrides/override"></div><p class="ansible-option-title" id="ansible-collections-theforeman-foreman-activation-key-module-parameter-content-overrides-override"><strong>override</strong></p>
 <a class="ansibleOptionLink" href="#parameter-content_overrides/override" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">string</span> / <span class="ansible-option-required">required</span></p>
 </div></td>
@@ -275,35 +283,35 @@ see <a class="reference internal" href="#ansible-collections-theforeman-foreman-
 </ul>
 </div></td>
 </tr>
-<tr class="row-even"><td><div class="ansible-option-cell">
+<tr class="row-odd"><td><div class="ansible-option-cell">
 <div class="ansibleOptionAnchor" id="parameter-content_view"></div><p class="ansible-option-title" id="ansible-collections-theforeman-foreman-activation-key-module-parameter-content-view"><strong>content_view</strong></p>
 <a class="ansibleOptionLink" href="#parameter-content_view" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">string</span></p>
 </div></td>
 <td><div class="ansible-option-cell"><p>Name of the content view</p>
 </div></td>
 </tr>
-<tr class="row-odd"><td><div class="ansible-option-cell">
+<tr class="row-even"><td><div class="ansible-option-cell">
 <div class="ansibleOptionAnchor" id="parameter-description"></div><p class="ansible-option-title" id="ansible-collections-theforeman-foreman-activation-key-module-parameter-description"><strong>description</strong></p>
 <a class="ansibleOptionLink" href="#parameter-description" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">string</span></p>
 </div></td>
 <td><div class="ansible-option-cell"><p>Description of the activation key</p>
 </div></td>
 </tr>
-<tr class="row-even"><td><div class="ansible-option-cell">
+<tr class="row-odd"><td><div class="ansible-option-cell">
 <div class="ansibleOptionAnchor" id="parameter-host_collections"></div><p class="ansible-option-title" id="ansible-collections-theforeman-foreman-activation-key-module-parameter-host-collections"><strong>host_collections</strong></p>
 <a class="ansibleOptionLink" href="#parameter-host_collections" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">list</span> / <span class="ansible-option-elements">elements=string</span></p>
 </div></td>
 <td><div class="ansible-option-cell"><p>List of host collections to add to activation key</p>
 </div></td>
 </tr>
-<tr class="row-odd"><td><div class="ansible-option-cell">
+<tr class="row-even"><td><div class="ansible-option-cell">
 <div class="ansibleOptionAnchor" id="parameter-lifecycle_environment"></div><p class="ansible-option-title" id="ansible-collections-theforeman-foreman-activation-key-module-parameter-lifecycle-environment"><strong>lifecycle_environment</strong></p>
 <a class="ansibleOptionLink" href="#parameter-lifecycle_environment" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">string</span></p>
 </div></td>
 <td><div class="ansible-option-cell"><p>Name of the lifecycle environment</p>
 </div></td>
 </tr>
-<tr class="row-even"><td><div class="ansible-option-cell">
+<tr class="row-odd"><td><div class="ansible-option-cell">
 <div class="ansibleOptionAnchor" id="parameter-max_hosts"></div><p class="ansible-option-title" id="ansible-collections-theforeman-foreman-activation-key-module-parameter-max-hosts"><strong>max_hosts</strong></p>
 <a class="ansibleOptionLink" href="#parameter-max_hosts" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">integer</span></p>
 </div></td>
@@ -311,28 +319,28 @@ see <a class="reference internal" href="#ansible-collections-theforeman-foreman-
 <p>Required if <em>unlimited_hosts=false</em></p>
 </div></td>
 </tr>
-<tr class="row-odd"><td><div class="ansible-option-cell">
+<tr class="row-even"><td><div class="ansible-option-cell">
 <div class="ansibleOptionAnchor" id="parameter-name"></div><p class="ansible-option-title" id="ansible-collections-theforeman-foreman-activation-key-module-parameter-name"><strong>name</strong></p>
 <a class="ansibleOptionLink" href="#parameter-name" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">string</span> / <span class="ansible-option-required">required</span></p>
 </div></td>
 <td><div class="ansible-option-cell"><p>Name of the activation key</p>
 </div></td>
 </tr>
-<tr class="row-even"><td><div class="ansible-option-cell">
+<tr class="row-odd"><td><div class="ansible-option-cell">
 <div class="ansibleOptionAnchor" id="parameter-new_name"></div><p class="ansible-option-title" id="ansible-collections-theforeman-foreman-activation-key-module-parameter-new-name"><strong>new_name</strong></p>
 <a class="ansibleOptionLink" href="#parameter-new_name" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">string</span></p>
 </div></td>
 <td><div class="ansible-option-cell"><p>Name of the new activation key when state == copied</p>
 </div></td>
 </tr>
-<tr class="row-odd"><td><div class="ansible-option-cell">
+<tr class="row-even"><td><div class="ansible-option-cell">
 <div class="ansibleOptionAnchor" id="parameter-organization"></div><p class="ansible-option-title" id="ansible-collections-theforeman-foreman-activation-key-module-parameter-organization"><strong>organization</strong></p>
 <a class="ansibleOptionLink" href="#parameter-organization" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">string</span> / <span class="ansible-option-required">required</span></p>
 </div></td>
 <td><div class="ansible-option-cell"><p>Organization that the entity is in</p>
 </div></td>
 </tr>
-<tr class="row-even"><td><div class="ansible-option-cell">
+<tr class="row-odd"><td><div class="ansible-option-cell">
 <div class="ansibleOptionAnchor" id="parameter-password"></div><p class="ansible-option-title" id="ansible-collections-theforeman-foreman-activation-key-module-parameter-password"><strong>password</strong></p>
 <a class="ansibleOptionLink" href="#parameter-password" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">string</span></p>
 </div></td>
@@ -340,35 +348,35 @@ see <a class="reference internal" href="#ansible-collections-theforeman-foreman-
 <p>If the value is not specified in the task, the value of environment variable <code class="docutils literal notranslate"><span class="pre">FOREMAN_PASSWORD</span></code> will be used instead.</p>
 </div></td>
 </tr>
-<tr class="row-odd"><td><div class="ansible-option-cell">
+<tr class="row-even"><td><div class="ansible-option-cell">
 <div class="ansibleOptionAnchor" id="parameter-purpose_addons"></div><p class="ansible-option-title" id="ansible-collections-theforeman-foreman-activation-key-module-parameter-purpose-addons"><strong>purpose_addons</strong></p>
 <a class="ansibleOptionLink" href="#parameter-purpose_addons" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">list</span> / <span class="ansible-option-elements">elements=string</span></p>
 </div></td>
 <td><div class="ansible-option-cell"><p>Sets the system purpose add-ons</p>
 </div></td>
 </tr>
-<tr class="row-even"><td><div class="ansible-option-cell">
+<tr class="row-odd"><td><div class="ansible-option-cell">
 <div class="ansibleOptionAnchor" id="parameter-purpose_role"></div><p class="ansible-option-title" id="ansible-collections-theforeman-foreman-activation-key-module-parameter-purpose-role"><strong>purpose_role</strong></p>
 <a class="ansibleOptionLink" href="#parameter-purpose_role" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">string</span></p>
 </div></td>
 <td><div class="ansible-option-cell"><p>Sets the system purpose role</p>
 </div></td>
 </tr>
-<tr class="row-odd"><td><div class="ansible-option-cell">
+<tr class="row-even"><td><div class="ansible-option-cell">
 <div class="ansibleOptionAnchor" id="parameter-purpose_usage"></div><p class="ansible-option-title" id="ansible-collections-theforeman-foreman-activation-key-module-parameter-purpose-usage"><strong>purpose_usage</strong></p>
 <a class="ansibleOptionLink" href="#parameter-purpose_usage" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">string</span></p>
 </div></td>
 <td><div class="ansible-option-cell"><p>Sets the system purpose usage</p>
 </div></td>
 </tr>
-<tr class="row-even"><td><div class="ansible-option-cell">
+<tr class="row-odd"><td><div class="ansible-option-cell">
 <div class="ansibleOptionAnchor" id="parameter-release_version"></div><p class="ansible-option-title" id="ansible-collections-theforeman-foreman-activation-key-module-parameter-release-version"><strong>release_version</strong></p>
 <a class="ansibleOptionLink" href="#parameter-release_version" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">string</span></p>
 </div></td>
 <td><div class="ansible-option-cell"><p>Set the content release version</p>
 </div></td>
 </tr>
-<tr class="row-odd"><td><div class="ansible-option-cell">
+<tr class="row-even"><td><div class="ansible-option-cell">
 <div class="ansibleOptionAnchor" id="parameter-server_url"></div><p class="ansible-option-title" id="ansible-collections-theforeman-foreman-activation-key-module-parameter-server-url"><strong>server_url</strong></p>
 <a class="ansibleOptionLink" href="#parameter-server_url" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">string</span> / <span class="ansible-option-required">required</span></p>
 </div></td>
@@ -376,7 +384,7 @@ see <a class="reference internal" href="#ansible-collections-theforeman-foreman-
 <p>If the value is not specified in the task, the value of environment variable <code class="docutils literal notranslate"><span class="pre">FOREMAN_SERVER_URL</span></code> will be used instead.</p>
 </div></td>
 </tr>
-<tr class="row-even"><td><div class="ansible-option-cell">
+<tr class="row-odd"><td><div class="ansible-option-cell">
 <div class="ansibleOptionAnchor" id="parameter-service_level"></div><p class="ansible-option-title" id="ansible-collections-theforeman-foreman-activation-key-module-parameter-service-level"><strong>service_level</strong></p>
 <a class="ansibleOptionLink" href="#parameter-service_level" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">string</span></p>
 </div></td>
@@ -389,7 +397,7 @@ see <a class="reference internal" href="#ansible-collections-theforeman-foreman-
 </ul>
 </div></td>
 </tr>
-<tr class="row-odd"><td><div class="ansible-option-cell">
+<tr class="row-even"><td><div class="ansible-option-cell">
 <div class="ansibleOptionAnchor" id="parameter-state"></div><p class="ansible-option-title" id="ansible-collections-theforeman-foreman-activation-key-module-parameter-state"><strong>state</strong></p>
 <a class="ansibleOptionLink" href="#parameter-state" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">string</span></p>
 </div></td>
@@ -405,7 +413,7 @@ see <a class="reference internal" href="#ansible-collections-theforeman-foreman-
 </ul>
 </div></td>
 </tr>
-<tr class="row-even"><td><div class="ansible-option-cell">
+<tr class="row-odd"><td><div class="ansible-option-cell">
 <div class="ansibleOptionAnchor" id="parameter-subscriptions"></div><p class="ansible-option-title" id="ansible-collections-theforeman-foreman-activation-key-module-parameter-subscriptions"><strong>subscriptions</strong></p>
 <a class="ansibleOptionLink" href="#parameter-subscriptions" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">list</span> / <span class="ansible-option-elements">elements=dictionary</span></p>
 </div></td>
@@ -414,7 +422,7 @@ see <a class="reference internal" href="#ansible-collections-theforeman-foreman-
 <p>This parameter is not supported in SCA mode.</p>
 </div></td>
 </tr>
-<tr class="row-odd"><td><div class="ansible-option-indent"></div><div class="ansible-option-cell">
+<tr class="row-even"><td><div class="ansible-option-indent"></div><div class="ansible-option-cell">
 <div class="ansibleOptionAnchor" id="parameter-subscriptions/name"></div><p class="ansible-option-title" id="ansible-collections-theforeman-foreman-activation-key-module-parameter-subscriptions-name"><strong>name</strong></p>
 <a class="ansibleOptionLink" href="#parameter-subscriptions/name" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">string</span></p>
 </div></td>
@@ -422,7 +430,7 @@ see <a class="reference internal" href="#ansible-collections-theforeman-foreman-
 <p>Mutually exclusive with <em>pool_id</em> and <em>upstream_pool_id</em>.</p>
 </div></td>
 </tr>
-<tr class="row-even"><td><div class="ansible-option-indent"></div><div class="ansible-option-cell">
+<tr class="row-odd"><td><div class="ansible-option-indent"></div><div class="ansible-option-cell">
 <div class="ansibleOptionAnchor" id="parameter-subscriptions/pool_id"></div><p class="ansible-option-title" id="ansible-collections-theforeman-foreman-activation-key-module-parameter-subscriptions-pool-id"><strong>pool_id</strong></p>
 <a class="ansibleOptionLink" href="#parameter-subscriptions/pool_id" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">string</span></p>
 </div></td>
@@ -432,7 +440,7 @@ see <a class="reference internal" href="#ansible-collections-theforeman-foreman-
 <p>it is as well the <code class="docutils literal notranslate"><span class="pre">UUID</span></code> as output by <code class="docutils literal notranslate"><span class="pre">hammer</span> <span class="pre">subscription</span> <span class="pre">list</span></code>.</p>
 </div></td>
 </tr>
-<tr class="row-odd"><td><div class="ansible-option-indent"></div><div class="ansible-option-cell">
+<tr class="row-even"><td><div class="ansible-option-indent"></div><div class="ansible-option-cell">
 <div class="ansibleOptionAnchor" id="parameter-subscriptions/upstream_pool_id"></div><p class="ansible-option-title" id="ansible-collections-theforeman-foreman-activation-key-module-parameter-subscriptions-upstream-pool-id"><strong>upstream_pool_id</strong></p>
 <a class="ansibleOptionLink" href="#parameter-subscriptions/upstream_pool_id" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">string</span></p>
 </div></td>
@@ -441,7 +449,7 @@ see <a class="reference internal" href="#ansible-collections-theforeman-foreman-
 <p>Also named <code class="docutils literal notranslate"><span class="pre">Master</span> <span class="pre">Pools</span></code> in the Red Hat Portal.</p>
 </div></td>
 </tr>
-<tr class="row-even"><td><div class="ansible-option-cell">
+<tr class="row-odd"><td><div class="ansible-option-cell">
 <div class="ansibleOptionAnchor" id="parameter-unlimited_hosts"></div><p class="ansible-option-title" id="ansible-collections-theforeman-foreman-activation-key-module-parameter-unlimited-hosts"><strong>unlimited_hosts</strong></p>
 <a class="ansibleOptionLink" href="#parameter-unlimited_hosts" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">boolean</span></p>
 </div></td>
@@ -453,12 +461,13 @@ see <a class="reference internal" href="#ansible-collections-theforeman-foreman-
 </ul>
 </div></td>
 </tr>
-<tr class="row-odd"><td><div class="ansible-option-cell">
+<tr class="row-even"><td><div class="ansible-option-cell">
 <div class="ansibleOptionAnchor" id="parameter-use_gssapi"></div><p class="ansible-option-title" id="ansible-collections-theforeman-foreman-activation-key-module-parameter-use-gssapi"><strong>use_gssapi</strong></p>
 <a class="ansibleOptionLink" href="#parameter-use_gssapi" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">boolean</span></p>
 </div></td>
 <td><div class="ansible-option-cell"><p>Use GSSAPI to perform the authentication, typically this is for Kerberos or Kerberos through Negotiate authentication.</p>
 <p>Requires the Python library <a class="reference external" href="https://github.com/pythongssapi/requests-gssapi">requests-gssapi</a> to be installed.</p>
+<p>If the value is not specified in the task, the value of environment variable <code class="docutils literal notranslate"><span class="pre">FOREMAN_USE_GSSAPI</span></code> will be used instead.</p>
 <p class="ansible-option-line"><strong class="ansible-option-choices">Choices:</strong></p>
 <ul class="simple">
 <li><p><code class="ansible-option-default-bold docutils literal notranslate"><strong><span class="pre">false</span></strong></code> <span class="ansible-option-choices-default-mark">← (default)</span></p></li>
@@ -466,7 +475,7 @@ see <a class="reference internal" href="#ansible-collections-theforeman-foreman-
 </ul>
 </div></td>
 </tr>
-<tr class="row-even"><td><div class="ansible-option-cell">
+<tr class="row-odd"><td><div class="ansible-option-cell">
 <div class="ansibleOptionAnchor" id="parameter-username"></div><p class="ansible-option-title" id="ansible-collections-theforeman-foreman-activation-key-module-parameter-username"><strong>username</strong></p>
 <a class="ansibleOptionLink" href="#parameter-username" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">string</span></p>
 </div></td>
@@ -474,7 +483,7 @@ see <a class="reference internal" href="#ansible-collections-theforeman-foreman-
 <p>If the value is not specified in the task, the value of environment variable <code class="docutils literal notranslate"><span class="pre">FOREMAN_USERNAME</span></code> will be used instead.</p>
 </div></td>
 </tr>
-<tr class="row-odd"><td><div class="ansible-option-cell">
+<tr class="row-even"><td><div class="ansible-option-cell">
 <div class="ansibleOptionAnchor" id="parameter-validate_certs"></div><p class="ansible-option-title" id="ansible-collections-theforeman-foreman-activation-key-module-parameter-validate-certs"><strong>validate_certs</strong></p>
 <a class="ansibleOptionLink" href="#parameter-validate_certs" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">boolean</span></p>
 </div></td>

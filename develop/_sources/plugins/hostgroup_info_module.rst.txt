@@ -91,6 +91,42 @@ Parameters
   * - .. raw:: html
 
         <div class="ansible-option-cell">
+        <div class="ansibleOptionAnchor" id="parameter-ca_path"></div>
+
+      .. _ansible_collections.theforeman.foreman.hostgroup_info_module__parameter-ca_path:
+
+      .. rst-class:: ansible-option-title
+
+      **ca_path**
+
+      .. raw:: html
+
+        <a class="ansibleOptionLink" href="#parameter-ca_path" title="Permalink to this option"></a>
+
+      .. ansible-option-type-line::
+
+        :ansible-option-type:`path`
+
+      .. raw:: html
+
+        </div>
+
+    - .. raw:: html
+
+        <div class="ansible-option-cell">
+
+      PEM formatted file that contains a CA certificate to be used for validation.
+
+      If the value is not specified in the task, the value of environment variable :literal:`FOREMAN\_CA\_PATH` will be used instead.
+
+
+      .. raw:: html
+
+        </div>
+
+  * - .. raw:: html
+
+        <div class="ansible-option-cell">
         <div class="ansibleOptionAnchor" id="parameter-location"></div>
 
       .. _ansible_collections.theforeman.foreman.hostgroup_info_module__parameter-location:
@@ -332,6 +368,8 @@ Parameters
       Use GSSAPI to perform the authentication, typically this is for Kerberos or Kerberos through Negotiate authentication.
 
       Requires the Python library \ `requests-gssapi <https://github.com/pythongssapi/requests-gssapi>`__ to be installed.
+
+      If the value is not specified in the task, the value of environment variable :literal:`FOREMAN\_USE\_GSSAPI` will be used instead.
 
 
       .. rst-class:: ansible-option-line

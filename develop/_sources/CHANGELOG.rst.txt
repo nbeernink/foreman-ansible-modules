@@ -13,6 +13,7 @@ Minor Changes
 -------------
 
 - Support Kerberos/GSSAPI authentication by passing ``use_gssapi: true`` instead of ``username`` and ``password``.
+- Support setting a specific CA file for certificate validation
 
 v5.2.0
 ======
