@@ -90,6 +90,10 @@ class RequestResponse(object):
 
 
 class RequestSession(Request):
+    def __init__(self, **kwargs):
+        self.use_gssapi = kwargs.pop('use_gssapi', False)
+        super().__init__(**kwargs)
+
     @property
     def auth(self):
         return (self.url_username, self.url_password)
@@ -136,7 +140,7 @@ class RequestSession(Request):
                 headers = {}
             headers['Content-Type'] = 'application/json'
         try:
-            result = self.open(method, url, validate_certs=validate_certs, data=data, headers=headers, **kwargs)
+            result = self.open(method, url, validate_certs=validate_certs, use_gssapi=self.use_gssapi, data=data, headers=headers, **kwargs)
             return RequestResponse(result)
         except six.moves.urllib.error.HTTPError as e:
             return RequestResponse(e)

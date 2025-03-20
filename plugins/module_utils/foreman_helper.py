@@ -619,10 +619,11 @@ class ForemanAnsibleModule(AnsibleModule):
             username=self._foremanapi_username,
             password=self._foremanapi_password,
             verify_ssl=verify_ssl,
-            kerberos=self._foremanapi_use_gssapi,
             task_timeout=self.task_timeout,
-            session=RequestSession(),
+            session=RequestSession(use_gssapi=self._foremanapi_use_gssapi),
         )
+        if self._foremanapi_use_gssapi:
+            self.foremanapi.call('users', 'extlogin')
 
         _status = self.status()
         self.foreman_version = LooseVersion(_status.get('version', '0.0.0'))
