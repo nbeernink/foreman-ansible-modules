@@ -36,8 +36,10 @@ with fileinput.input() as f:
         # drop apypie imports (we have one file now) and future imports (they are already present in the header)
         elif line.startswith('from apypie') or line.startswith('from __future__'):
             continue
-        # drop requests import, we use a different implementation
-        elif line == 'import requests':
+        # drop requests imports, we use a different implementation
+        elif line in ['import requests', '    from requests_gssapi import HTTPKerberosAuth  # type: ignore',
+                      '        from requests_kerberos import HTTPKerberosAuth  # type: ignore',
+                      '        HTTPKerberosAuth = None']:
             continue
         # drop blocks that only handle typing imports (fenced by either try or if TYPE_CHECKING)
         elif line in ['try:', 'if TYPE_CHECKING:'] or buffer_lines:
