@@ -56,6 +56,8 @@ with fileinput.input() as f:
             # inject a blank line before class or import statements
             if (line.startswith('class ') or line.startswith('import ') or line.startswith('def ')) and not output_lines[-1].startswith('import '):
                 output_lines.append('')
+            if line.endswith(' or requests.Session()'):
+                line = line.replace(' or requests.Session()', '')
             output_lines.append(line)
 
     # anything left in the buffer? flush it!
