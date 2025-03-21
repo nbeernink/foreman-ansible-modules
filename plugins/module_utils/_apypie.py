@@ -244,8 +244,9 @@ from json.decoder import JSONDecodeError  # type: ignore
 import os
 from urllib.parse import urljoin  # type: ignore
 
-NO_CONTENT = 204
 HTTPKerberosAuth = None
+
+NO_CONTENT = 204
 
 
 def _qs_param(param):

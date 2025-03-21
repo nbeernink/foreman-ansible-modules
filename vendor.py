@@ -29,6 +29,9 @@ with fileinput.input() as f:
 
         # empty lines trigger buffer flushes
         if line == '':
+            # we got an empty try/except because we dropped all code inbetween
+            if len(buffer_lines) >= 2 and buffer_lines[0] == 'try:' and buffer_lines[1].startswith('except'):
+                buffer_lines.clear()
             output_lines.extend(buffer_lines)
             buffer_lines.clear()
             if output_lines and output_lines[-1] != '':
@@ -38,9 +41,10 @@ with fileinput.input() as f:
             continue
         # drop requests imports, we use a different implementation
         elif line in ['import requests', '    from requests_gssapi import HTTPKerberosAuth  # type: ignore',
-                      '        from requests_kerberos import HTTPKerberosAuth  # type: ignore',
-                      '        HTTPKerberosAuth = None']:
+                      '        from requests_kerberos import HTTPKerberosAuth  # type: ignore']:
             continue
+        elif line == '        HTTPKerberosAuth = None':
+            output_lines.append(line.strip())
         # drop blocks that only handle typing imports (fenced by either try or if TYPE_CHECKING)
         elif line in ['try:', 'if TYPE_CHECKING:'] or buffer_lines:
             buffer_lines.append(line)
