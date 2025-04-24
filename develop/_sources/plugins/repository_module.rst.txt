@@ -1168,6 +1168,7 @@ Parameters
       - :ansible-option-choices-entry:`"rhel-7"`
       - :ansible-option-choices-entry:`"rhel-8"`
       - :ansible-option-choices-entry:`"rhel-9"`
+      - :ansible-option-choices-entry:`"rhel-10"`
 
 
       .. raw:: html
@@ -1238,6 +1239,43 @@ Parameters
         <div class="ansible-option-cell">
 
       Product to which the repository lives in
+
+
+      .. raw:: html
+
+        </div>
+
+  * - .. raw:: html
+
+        <div class="ansible-option-cell">
+        <div class="ansibleOptionAnchor" id="parameter-retain_package_versions_count"></div>
+
+      .. _ansible_collections.theforeman.foreman.repository_module__parameter-retain_package_versions_count:
+
+      .. rst-class:: ansible-option-title
+
+      **retain_package_versions_count**
+
+      .. raw:: html
+
+        <a class="ansibleOptionLink" href="#parameter-retain_package_versions_count" title="Permalink to this option"></a>
+
+      .. ansible-option-type-line::
+
+        :ansible-option-type:`integer`
+
+      :ansible-option-versionadded:`added in theforeman.foreman 5.4.0`
+
+
+      .. raw:: html
+
+        </div>
+
+    - .. raw:: html
+
+        <div class="ansible-option-cell">
+
+      The maximum number of versions of each package to keep.
 
 
       .. raw:: html
