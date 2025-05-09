@@ -370,7 +370,7 @@ Parameters
 
       Release version and base architecture of the repositories to enable.
 
-      Some reposotory sets require only :emphasis:`basearch` or only :emphasis:`releasever` to be set.
+      Some repository sets require only :emphasis:`basearch` or only :emphasis:`releasever` to be set.
 
       See the examples how you can obtain this information using :ref:`theforeman.foreman.resource\_info <ansible_collections.theforeman.foreman.resource_info_module>`.
 
