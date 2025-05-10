@@ -970,6 +970,43 @@ Parameters
   * - .. raw:: html
 
         <div class="ansible-option-cell">
+        <div class="ansibleOptionAnchor" id="parameter-metadata_expire"></div>
+
+      .. _ansible_collections.theforeman.foreman.repository_module__parameter-metadata_expire:
+
+      .. rst-class:: ansible-option-title
+
+      **metadata_expire**
+
+      .. raw:: html
+
+        <a class="ansibleOptionLink" href="#parameter-metadata_expire" title="Permalink to this option"></a>
+
+      .. ansible-option-type-line::
+
+        :ansible-option-type:`integer`
+
+      :ansible-option-versionadded:`added in theforeman.foreman 5.4.0`
+
+
+      .. raw:: html
+
+        </div>
+
+    - .. raw:: html
+
+        <div class="ansible-option-cell">
+
+      Set the metadata expiration time (in seconds) for a yum repository.
+
+
+      .. raw:: html
+
+        </div>
+
+  * - .. raw:: html
+
+        <div class="ansible-option-cell">
         <div class="ansibleOptionAnchor" id="parameter-mirror_on_sync"></div>
 
       .. _ansible_collections.theforeman.foreman.repository_module__parameter-mirror_on_sync:
