@@ -1092,7 +1092,9 @@ Parameters
 
         <div class="ansible-option-cell">
 
-      Hostgroup parent name
+      Title of the parent Hostgroup.
+
+      Can be nested in the form "Main Group/Sub Group".
 
 
       .. raw:: html
@@ -1871,9 +1873,7 @@ Examples
         content_source: capsule.example.com
         lifecycle_environment: "Production"
         content_view: "My content view"
-        parameters:
-          - name: "kt_activation_keys"
-            value: "my_prod_ak"
+        activation_keys: "my_prod_ak"
 
     - name: "Delete a Hostgroup"
       theforeman.foreman.hostgroup:

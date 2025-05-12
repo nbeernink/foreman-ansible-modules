@@ -454,7 +454,8 @@ see <a class="reference internal" href="#ansible-collections-theforeman-foreman-
 <div class="ansibleOptionAnchor" id="parameter-parent"></div><p class="ansible-option-title" id="ansible-collections-theforeman-foreman-hostgroup-module-parameter-parent"><strong>parent</strong></p>
 <a class="ansibleOptionLink" href="#parameter-parent" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">string</span></p>
 </div></td>
-<td><div class="ansible-option-cell"><p>Hostgroup parent name</p>
+<td><div class="ansible-option-cell"><p>Title of the parent Hostgroup.</p>
+<p>Can be nested in the form “Main Group/Sub Group”.</p>
 </div></td>
 </tr>
 <tr class="row-odd"><td><div class="ansible-option-cell">
@@ -695,9 +696,7 @@ see <a class="reference internal" href="#ansible-collections-theforeman-foreman-
 <span class="w">    </span><span class="nt">content_source</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">capsule.example.com</span>
 <span class="w">    </span><span class="nt">lifecycle_environment</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Production&quot;</span>
 <span class="w">    </span><span class="nt">content_view</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;My</span><span class="nv"> </span><span class="s">content</span><span class="nv"> </span><span class="s">view&quot;</span>
-<span class="w">    </span><span class="nt">parameters</span><span class="p">:</span>
-<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;kt_activation_keys&quot;</span>
-<span class="w">        </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;my_prod_ak&quot;</span>
+<span class="w">    </span><span class="nt">activation_keys</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;my_prod_ak&quot;</span>
 
 <span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Delete</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">Hostgroup&quot;</span>
 <span class="w">  </span><span class="nt">theforeman.foreman.hostgroup</span><span class="p">:</span>
