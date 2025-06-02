@@ -15,6 +15,11 @@ Minor Changes
 - repository - add ``rhel-10`` to os version filter choices
 - repository - add support for the ``retain_package_versions_count`` parameter
 
+Bugfixes
+--------
+
+- host - ensure LCE and CV are always sent together when updating one of them
+
 v5.3.0
 ======
 
