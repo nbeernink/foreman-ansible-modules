@@ -18,6 +18,7 @@ Minor Changes
 Bugfixes
 --------
 
+- content_upload - lower chunk size to 1MB to avoid generating too big requests (https://github.com/theforeman/foreman-ansible-modules/issues/1862)
 - host - ensure LCE and CV are always sent together when updating one of them
 
 v5.3.0
